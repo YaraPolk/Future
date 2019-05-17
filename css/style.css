@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes Skiliny {
+    from {
+       top: -200px;
+       opacity: 0; 
+    }
+
+    to {
+        top: 0;
+        opacity: 1; 
+    }
+}
+
+@keyframes menu-navigation {
+    from {
+       right: -200px;
+       opacity: 0; 
+    }
+
+    to {
+        right: 20px;
+        opacity: 1; 
+    }
+}
+
+@keyframes watches {
+    from {
+       opacity: 0; 
+    }
+
+    to {
+        opacity: 1; 
+    }
+}
+
+
+header nav, main aside {
+    animation: menu-navigation 2s;
+}
+
+header section {
+    animation: Skiliny 3s;
+}
+
+/* main section h4, main section img, main section button {
+    animation-delay: 2s;
+    animation: watches 6s;
+} */
+
+body {
+    background-image: url(../image/bcgr.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none; 
+}
+
+header {
+    height: 150px;
+    width: 100%;
+}
+
+main {
+    height: 900px;
+    width: 100%;
+}
+
+footer {
+    height: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(to bottom, #91fbff00 , #75c6c9e8);
+}
+
+.Logo-block {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: #ffffff2c;
+    left: 100px;
+}
+
+.bcg-block {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border: 3px solid white;
+    border-right: none;
+    float: left;
+    overflow: hidden;
+    margin: 65px 0 0 20px;
+}
+
+.bop-block {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-right: 3px solid white;
+    overflow: hidden;
+    top: -48px;
+    right: 3px;
+}
+
+.bop-block:last-child {
+    top: -13px;
+}
+
+.skyline-block {
+    position: relative;
+    top: -47px;
+    left: 23px;
+}
+
+#Skyline {
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 15px 20px;
+    position: relative;
+    z-index: 5;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    margin-left: -20px;
+}
+
+nav .Menu {
+    padding: 40px 25px;
+}
+
+.Menu a {
+    text-decoration: none;
+    color: white;
+    font: normal normal bold 14px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+    transition: 500ms;
+    opacity: 0.5;
+}
+
+.Menu a:hover {
+    font-size: 1.5em;
+    opacity: 1;
+    transition: 500ms;
+}
+
+
+main .social-icon {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    position: fixed;
+    right: 0;
+    float: left;
+    top: 40%;
+}
+
+.social-icon img {
+    transition: 500ms;
+}
+
+.social-icon img:hover {
+    transform: scale(1.5);
+    transition: 500ms;
+}
+
+.social-icon a {
+    padding: 5px;
+    text-decoration: none;
+}
+
+.social-icon a:hover {
+    text-decoration: none;
+}
+
+section.watches {
+    display: flex;
+    justify-content: center;
+}
+
+section.watches img {
+    opacity: 0;
+}
+
+section.watches .look-in-future {
+    text-align: center;
+    color: white;
+    width: 500px;
+    position: relative;
+    top: 233px;
+    left: 25px;
+    opacity: 0;
+}
+
+section.watches .look-in-future h1 {
+    font: normal normal bold 80px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+    line-height: 90px;
+}
+
+section.watches .look-in-future h4{
+    font: normal normal bold 20px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+    position: relative;
+}
+
+section.watches .look-in-future h4:first-child {
+    top: -40px;
+}
+
+section.watches .look-in-future h4:last-child {
+    top: 40px;
+}
+
+section.watches img {
+    position: absolute;
+}
+
+.movedown {
+    width: 60px;
+    height: 60px;
+    color: white;
+    background: none;
+    position: relative;
+    border: 1px solid white;
+    top: 740px;
+    right: 250px;
+    z-index: 6;
+    opacity: 0;
+}
+
+.movedown div div:first-child {
+    background-color: white;
+    width: 35px;
+    height: 1px;
+    transform: rotate(90deg);
+    position: relative;
+    left: 11px;
+    top: 25px;
+}
+
+.movedown div div:nth-child(2) {
+    background-color: white;
+    width: 18px;
+    height: 1px;
+    transform: rotate(51deg);
+    position: relative;
+    left: 14px;
+    top: 35px;
+}
+
+.movedown div div:last-child {
+    background-color: white;
+    width: 18px;
+    height: 1px;
+    transform: rotate(130deg);
+    position: relative;
+    left: 25px;
+    top: 34px;
+}
+
+.movedown div {
+    position: relative;
+    transition: 500ms;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.movedown div:hover {
+    top: 5px;
+    transition: 500ms;
+}
+
+footer section.footer-text{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+footer section.footer-text p {
+    width: 20%;
+    margin: 20px auto;
+    font-size: 23px;
+}
+
+footer div input:first-child {
+    padding: 10px 100px 10px 10px;
+}
+
+footer div input:last-child {
+    border: 0;
+    font: normal normal bold 14px helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+    padding: 10px 14px;
+    margin-left: 10px;
+}
+
+footer div.email-button {
+    margin-bottom: 30px;
+}
+
+footer aside.social-icon {
+    margin-bottom: 220px;
+}
+
+button.moveup {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    color: white;
+    background: none;
+    position: relative;
+    border: 1px solid white;
+    top: -20px;
+}
+
+button.moveup div {
+    position: relative;
+    transition: 500ms;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.moveup div div:first-child {
+    background-color: white;
+    width: 30px;
+    height: 1px;
+    transform: rotate(90deg);
+    position: relative;
+    left: 13px;
+    top: 28px;
+}
+
+.moveup div div:nth-child(2) {
+    background-color: white;
+    width: 18px;
+    height: 1px;
+    transform: rotate(130deg);
+    position: relative;
+    left: 14px;
+    top: 18px;
+}
+
+.moveup div div:last-child {
+    background-color: white;
+    width: 18px;
+    height: 1px;
+    transform: rotate(50deg);
+    position: relative;
+    left: 25px;
+    top: 17px;
+}
+
+button.moveup div:hover {
+    top: -5px;
+    transition: 500ms;
+}
