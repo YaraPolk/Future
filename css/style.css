@@ -46,16 +46,28 @@ header section {
     animation: Skiliny 3s;
 }
 
-/* main section h4, main section img, main section button {
-    animation-delay: 2s;
-    animation: watches 6s;
-} */
-
 body {
-    background-image: url(../image/bcgr.png);
+    background-image: url(../image/bcgr.webp);
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow-x: hidden;
+}
+
+#bgpb {
+    background-color: #0000003d;
+    position: absolute;
+    width: 100%;
+}
+
+#bgpb > video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 50%; 
+    min-height: 50%;
+    width: auto;
+    height: auto;
+    z-index: -1; 
 }
 
 body::-webkit-scrollbar{
@@ -79,7 +91,7 @@ footer {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    background: linear-gradient(to bottom, #91fbff00 , #75c6c9e8);
+    background: linear-gradient(to bottom, #91fbff00 , #ffffffe8);
 }
 
 .Logo-block {
@@ -320,10 +332,10 @@ button.moveup {
     width: 60px;
     height: 60px;
     text-align: center;
-    color: white;
+    color: #000000;
     background: none;
     position: relative;
-    border: 1px solid white;
+    border: 1px solid #000000;
     top: -20px;
 }
 
@@ -336,7 +348,7 @@ button.moveup div {
 }
 
 .moveup div div:first-child {
-    background-color: white;
+    background-color: #000000;
     width: 30px;
     height: 1px;
     transform: rotate(90deg);
@@ -346,7 +358,7 @@ button.moveup div {
 }
 
 .moveup div div:nth-child(2) {
-    background-color: white;
+    background-color: #000000;
     width: 18px;
     height: 1px;
     transform: rotate(130deg);
@@ -356,7 +368,7 @@ button.moveup div {
 }
 
 .moveup div div:last-child {
-    background-color: white;
+    background-color: #000000;
     width: 18px;
     height: 1px;
     transform: rotate(50deg);
